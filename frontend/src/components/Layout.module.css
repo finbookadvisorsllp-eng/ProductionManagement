@@ -7,8 +7,8 @@
 .sidebar {
   width: 240px;
   min-width: 240px;
-  background: var(--primary-dark);
-  color: #fff;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
   display: flex;
   flex-direction: column;
   transition: width .25s ease, min-width .25s ease;
@@ -29,7 +29,10 @@
   border-bottom: 1px solid rgba(255,255,255,.12);
 }
 
-.brandIcon { color: #93c5fd; flex-shrink: 0; }
+.brandIcon { 
+  color: var(--primary-light); 
+  flex-shrink: 0; 
+}
 
 .brandName {
   font-weight: 700;
@@ -54,7 +57,7 @@
   padding: 10px 16px;
   background: none;
   border: none;
-  color: rgba(255,255,255,.75);
+  color: var(--sidebar-text-muted);
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -65,8 +68,8 @@
 }
 
 .groupToggle:hover {
-  background: rgba(255,255,255,.08);
-  color: #fff;
+  background: var(--sidebar-hover);
+  color: var(--sidebar-text);
 }
 
 .chevron { margin-left: auto; }
@@ -78,21 +81,21 @@
   align-items: center;
   gap: 10px;
   padding: 9px 16px 9px 34px;
-  color: rgba(255,255,255,.65);
+  color: var(--sidebar-text-muted);
   font-size: 13px;
   transition: background .15s, color .15s;
   white-space: nowrap;
 }
 
 .navLink:hover {
-  background: rgba(255,255,255,.07);
-  color: #fff;
+  background: var(--sidebar-hover);
+  color: var(--sidebar-text);
 }
 
 .navLink.active {
-  background: rgba(255,255,255,.14);
-  color: #fff;
-  border-right: 3px solid #93c5fd;
+  background: var(--sidebar-active);
+  color: var(--sidebar-text);
+  border-right: 3px solid var(--primary-light);
 }
 
 .main {
@@ -132,11 +135,16 @@
   white-space: nowrap;
 }
 
-.headerRight { margin-left: auto; }
+.headerRight { 
+  margin-left: auto; 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
 .badge {
-  background: #dbeafe;
-  color: var(--primary);
+  background: var(--primary-light);
+  color: white;
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;
