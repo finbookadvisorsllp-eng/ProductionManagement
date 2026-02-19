@@ -1,0 +1,29 @@
+.page { display: flex; flex-direction: column; gap: 16px; }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.heading { font-size: 22px; font-weight: 700; }
+.sub { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background .15s;
+}
+
+.addBtn:hover { background: var(--primary-dark); }
