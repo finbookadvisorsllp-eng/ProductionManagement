@@ -1,0 +1,44 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - img [ref=e6]
+      - generic [ref=e8]: ProdManage
+    - navigation [ref=e9]:
+      - generic [ref=e10]:
+        - button "Sales Data" [ref=e11] [cursor=pointer]:
+          - img [ref=e12]
+          - generic [ref=e13]: Sales Data
+          - img [ref=e14]
+        - generic [ref=e16]:
+          - link "Dashboard" [ref=e17] [cursor=pointer]:
+            - /url: /sales/dashboard
+            - img [ref=e18]
+            - generic [ref=e21]: Dashboard
+          - link "Records" [ref=e22] [cursor=pointer]:
+            - /url: /sales/records
+            - img [ref=e23]
+            - generic [ref=e24]: Records
+          - link "Bulk Import" [ref=e25] [cursor=pointer]:
+            - /url: /sales/import
+            - img [ref=e26]
+            - generic [ref=e29]: Bulk Import
+          - link "Analytics" [ref=e30] [cursor=pointer]:
+            - /url: /sales/analytics
+            - img [ref=e31]
+            - generic [ref=e32]: Analytics
+  - generic [ref=e33]:
+    - banner [ref=e34]:
+      - button "Toggle sidebar" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - heading "Production Management System" [level=1] [ref=e39]
+      - generic [ref=e40]:
+        - button "Switch to dark theme" [ref=e41] [cursor=pointer]:
+          - img [ref=e42]
+        - generic [ref=e44]: Sales Module
+    - main [ref=e45]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "Sales Dashboard" [level=2] [ref=e49]
+          - paragraph [ref=e50]: Historical sales overview for production forecasting
+        - combobox [ref=e51] [cursor=pointer]:
+          - option "All Financial Years" [selected]

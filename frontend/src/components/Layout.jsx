@@ -5,6 +5,7 @@ import {
   ChevronDown, ChevronRight, Menu, X
 } from 'lucide-react';
 import styles from './Layout.module.css';
+import ThemeToggle from './ThemeToggle';
 
 const navItems = [
   {
@@ -93,6 +94,7 @@ export default function Layout() {
           </button>
           <h1 className={styles.pageTitle}>Production Management System</h1>
           <div className={styles.headerRight}>
+            <ThemeToggle />
             <span className={styles.badge}>Sales Module</span>
           </div>
         </header>
